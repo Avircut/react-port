@@ -1,20 +1,23 @@
-.Sidebar{
+.Sidebar {
   height: calc(100vh - var(--navbar-height));
   position: relative;
   width: var(--sidebar-width);
   background-color: var(--inverted-bg-color);
-  transition: .3s width ease-in-out;
+  transition: 0.3s width ease-in-out;
 }
-.collapsed{
+
+.collapsed {
   width: var(--sidebar-width-collapsed);
 }
-.switchers{
+
+.switchers {
   display: flex;
   justify-content: center;
   position: absolute;
   bottom: 20px;
   width: 100%;
 }
-.lang{
+
+.lang {
   margin-left: 15px;
 }
