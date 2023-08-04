@@ -1,4 +1,9 @@
 {
   "Тестовый пример": "Test Example",
-  "Language": "English"
+  "Language": "English",
+  "Not Found": "404 - Not Found",
+  "Loading": "Loading...",
+  "Something went wrong": "Something went wrong",
+  "Reload page": "Reload page",
+  "throw Error": "throw Error"
 }
