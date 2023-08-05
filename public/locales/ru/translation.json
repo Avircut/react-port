@@ -5,5 +5,8 @@
   "Loading": "Загрузка...",
   "Something went wrong": "Что-то пошло не так",
   "Reload page": "Обновить страницу",
-  "throw Error": "Выдать ошибку"
+  "throw Error": "Выдать ошибку",
+  "Toggle Sidebar": "Переключить Sidebar",
+  "AboutPageName": "О сайте",
+  "MainPageName": "Главная"
 }

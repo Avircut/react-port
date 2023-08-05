@@ -6,7 +6,7 @@ interface LoaderProps {
 }
 
 export const Loader = ({ className } : LoaderProps) => (
-  <div className={classNames(cls.ldsRing)}>
+  <div className={classNames(cls.ldsRing, {}, [className])}>
     <div />
     <div />
     <div />

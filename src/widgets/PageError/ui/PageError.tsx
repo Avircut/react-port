@@ -13,7 +13,7 @@ export const PageError = ({ className }: PageErrorProps) => {
     location.reload();
   };
   return (
-    <div className={classNames(cls.PageError)}>
+    <div className={classNames(cls.PageError, {}, [className])}>
       <p>{t('Something went wrong')}</p>
       <Button onClick={reloadPage} theme={ThemeButton.CLEAR}>
         {t('Reload page')}

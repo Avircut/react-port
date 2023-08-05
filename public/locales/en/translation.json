@@ -5,5 +5,8 @@
   "Loading": "Loading...",
   "Something went wrong": "Something went wrong",
   "Reload page": "Reload page",
-  "throw Error": "throw Error"
+  "throw Error": "throw Error",
+  "Toggle Sidebar": "Toggle Sidebar",
+  "AboutPageName": "About",
+  "MainPageName": "Main"
 }
