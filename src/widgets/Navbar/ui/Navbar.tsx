@@ -12,16 +12,7 @@ export default function Navbar({ className }: NavbarProps) {
   return (
     <div className={classNames(cls.navbar)}>
       <div className={cls.links}>
-        <AppLink
-          theme={AppLinkTheme.SECONDARY}
-          className={classNames(cls.mainLink, {}, [className])}
-          to="/"
-        >
-          {t('MainPageName')}
-        </AppLink>
-        <AppLink className={cls.link} to="/about">
-          {t('AboutPageName')}
-        </AppLink>
+        /
       </div>
     </div>
   );

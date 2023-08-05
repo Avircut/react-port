@@ -8,5 +8,6 @@
   "throw Error": "Выдать ошибку",
   "Toggle Sidebar": "Переключить Sidebar",
   "AboutPageName": "О сайте",
-  "MainPageName": "Главная"
+  "MainPageName": "Главная",
+  "Short_Language": "RU"
 }

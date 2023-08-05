@@ -1,4 +1,4 @@
-import { Button, ThemeButton } from 'shared/ui/Button/Button';
+import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
 
@@ -14,7 +14,7 @@ export const BugButton = () => {
   }, [error]);
   return (
     <Button
-      theme={ThemeButton.CLEAR}
+      theme={ButtonTheme.CLEAR}
       onClick={toggleError}
       className=""
     >
