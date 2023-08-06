@@ -10,5 +10,7 @@
   "AboutPageName": "О сайте",
   "MainPageName": "Главная",
   "Short_Language": "RU",
-  "Log in": "Войти"
+  "Log in": "Войти",
+  "Increment": "Увеличить",
+  "Decrement": "Уменьшить"
 }

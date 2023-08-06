@@ -10,5 +10,7 @@
   "AboutPageName": "About",
   "MainPageName": "Main",
   "Short_Language": "EN",
-  "Log in": "Log in"
+  "Log in": "Log in",
+  "Increment": "Increment",
+  "Decrement": "Decrement"
 }
