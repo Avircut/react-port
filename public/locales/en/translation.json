@@ -12,5 +12,8 @@
   "Short_Language": "EN",
   "Log in": "Log in",
   "Increment": "Increment",
-  "Decrement": "Decrement"
+  "Decrement": "Decrement",
+  "FormEnter": "Log in",
+  "FormUsername": "Enter Username",
+  "FormPassword": "Enter Password"
 }

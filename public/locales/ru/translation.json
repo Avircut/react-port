@@ -12,5 +12,8 @@
   "Short_Language": "RU",
   "Log in": "Войти",
   "Increment": "Увеличить",
-  "Decrement": "Уменьшить"
+  "Decrement": "Уменьшить",
+  "FormEnter": "Войти",
+  "FormUsername": "Введите логин",
+  "FormPassword": "Введите пароль"
 }
