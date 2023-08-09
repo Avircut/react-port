@@ -15,5 +15,8 @@
   "Decrement": "Уменьшить",
   "FormEnter": "Войти",
   "FormUsername": "Введите логин",
-  "FormPassword": "Введите пароль"
+  "FormPassword": "Введите пароль",
+  "AuthFormTitle": "Авторизация",
+  "Invalid Credentials": "Неверные данные",
+  "Log out": "Выйти"
 }

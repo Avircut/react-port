@@ -3,11 +3,16 @@ import { useTheme } from 'app/providers/ThemeProvider';
 import { AppRouter } from 'app/providers/router';
 import { Navbar } from 'widgets/Navbar';
 import { Sidebar } from 'widgets/Sidebar';
-import { Suspense, useState } from 'react';
-import { Modal } from 'shared/ui/Modal/Modal';
+import { Suspense, useEffect, useState } from 'react';
+import { userActions } from 'entities/User';
+import { useAppDispatch } from './providers/StoreProvider';
 
 const App = () => {
   const { theme } = useTheme();
+  const dispatch = useAppDispatch();
+  useEffect(() => {
+    dispatch(userActions.initAuthData());
+  }, [dispatch]);
   return (
     <Suspense fallback="">
       <div className={classNames('app')}>

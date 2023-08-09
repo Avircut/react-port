@@ -15,5 +15,8 @@
   "Decrement": "Decrement",
   "FormEnter": "Log in",
   "FormUsername": "Enter Username",
-  "FormPassword": "Enter Password"
+  "FormPassword": "Enter Password",
+  "AuthFormTitle": "Auth",
+  "Invalid Credentials": "Invalid Credentials",
+  "Log out": "Log out"
 }
