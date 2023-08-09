@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import type { Preview, StoryFn } from '@storybook/react';
+import type { Preview } from '@storybook/react';
 import { Theme } from 'app/providers/ThemeProvider';
 import { StyleDecorator } from '../../src/shared/config/storybook/decorators/StyleDecorator/StyleDecorator';
 import { ThemeDecorator } from '../../src/shared/config/storybook/decorators/ThemeDecorator/ThemeDecorator';

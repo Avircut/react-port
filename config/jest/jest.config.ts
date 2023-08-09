@@ -44,6 +44,7 @@ export default {
     '\\.(s?css|less)$': 'identity-obj-proxy',
     '\\.svg': path.resolve(__dirname, 'jestEmptyComponent.tsx'),
   },
+
   // Indicates whether the coverage information should be collected while executing the test
   // collectCoverage: false,
 
@@ -96,9 +97,6 @@ export default {
 
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
   // moduleNameMapper: {},
-
-  // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
-  // modulePathIgnorePatterns: [],
 
   // Activates notifications for test results
   // notify: false,
