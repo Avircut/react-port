@@ -1,11 +1,9 @@
 import {
-  DeepPartial,
   ReducersMapObject,
   configureStore,
 } from '@reduxjs/toolkit';
 import { CounterReducer } from 'entities/Counter';
 import { userReducer } from 'entities/User';
-import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
 import { StateSchema } from './StateSchema';
 import { createReducerManager } from './reducerManager';
 
@@ -29,7 +27,4 @@ export function createReduxStore(
 
   return store;
 }
-export const store = createReduxStore();
-export type AppDispatch = typeof store.dispatch;
-export const useAppDispatch: () => AppDispatch = useDispatch;
-export const useAppSelector: TypedUseSelectorHook<StateSchema> = useSelector;
+export type AppDispatch = ReturnType<typeof createReduxStore>['dispatch'];

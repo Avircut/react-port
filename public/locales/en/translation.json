@@ -18,5 +18,6 @@
   "FormPassword": "Enter Password",
   "AuthFormTitle": "Auth",
   "Invalid Credentials": "Invalid Credentials",
-  "Log out": "Log out"
+  "Log out": "Log out",
+  "Profile": "Profile"
 }

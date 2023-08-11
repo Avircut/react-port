@@ -1,0 +1,27 @@
+.link {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  gap: 8px;
+}
+
+.linkText {
+  transition: 0.15s all ease-in-out;
+}
+
+.icon {
+  fill: var(--inverted-primary-color);
+}
+
+.collapsed {
+  .link {
+    width: 100%;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .linkText {
+    opacity: 0;
+    width: 0;
+  }
+}

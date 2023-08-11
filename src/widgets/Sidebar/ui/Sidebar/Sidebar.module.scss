@@ -23,37 +23,11 @@
   gap: 15px;
 }
 
-.link {
-  display: flex;
-  align-items: center;
-  margin-left: 10px;
-  gap: 8px;
-}
-
-.linkText {
-  transition: 0.15s all ease-in-out;
-}
-
-.icon {
-  fill: var(--inverted-primary-color);
-}
-
 .collapsed {
   width: var(--sidebar-width-collapsed);
 
   .switchers {
     flex-direction: column;
-  }
-
-  .linkText {
-    opacity: 0;
-    width: 0;
-  }
-
-  .link {
-    width: 100%;
-    justify-content: center;
-    margin-left: 0;
   }
 }
 

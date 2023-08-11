@@ -18,5 +18,6 @@
   "FormPassword": "Введите пароль",
   "AuthFormTitle": "Авторизация",
   "Invalid Credentials": "Неверные данные",
-  "Log out": "Выйти"
+  "Log out": "Выйти",
+  "Profile": "Профиль"
 }

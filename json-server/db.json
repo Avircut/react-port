@@ -5,10 +5,17 @@
     { "id": "3", "title": "json-server 2", "author": "typicode" },
     { "id": "4", "title": "json-server 3", "author": "typicode" }
   ],
-  "comments": [
-    { "id": "1", "body": "some comment", "postId": 1 }
-  ],
-  "profile": { "name": "typicode" },
+  "comments": [{ "id": "1", "body": "some comment", "postId": 1 }],
+  "profile": {
+    "first": "Вячеслав",
+    "lastname": "Ломов",
+    "age": 24,
+    "currency": "RUB",
+    "country": "Russia",
+    "city": "Moscow",
+    "username": "admin",
+    "avatar": "https://sun27-1.userapi.com/s/v1/ig2/wi5o_w0R9_NC5nNp_7LxI8cZlUtm64kQ4PL5cpXrdw-7YFjF2BKnjiNV16rJiGBnvEId9NiNgieePJPOVzXMARIT.jpg?size=144x144&quality=95&crop=330,278,144,144&ava=1"
+  },
   "users": [
     {
       "id": "1",

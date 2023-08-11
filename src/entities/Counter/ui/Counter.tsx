@@ -1,6 +1,7 @@
 import { Button } from 'shared/ui/Button/Button';
 import { useTranslation } from 'react-i18next';
-import { useAppDispatch, useAppSelector } from 'app/providers/StoreProvider';
+import { useAppSelector } from 'shared/lib/hooks/useAppSelector/useAppSelector';
+import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { counterActions } from '../model/slice/counterSlice';
 import { getCounterValue } from '../model/selectors/getCounterValue/getCounterValue';
 
