@@ -30,6 +30,6 @@ export function createReduxStore(
   return store;
 }
 export const store = createReduxStore();
-type AppDispatch = typeof store.dispatch;
+export type AppDispatch = typeof store.dispatch;
 export const useAppDispatch: () => AppDispatch = useDispatch;
 export const useAppSelector: TypedUseSelectorHook<StateSchema> = useSelector;
