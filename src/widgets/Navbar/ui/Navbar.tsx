@@ -8,11 +8,7 @@ import { useAppSelector } from 'shared/lib/hooks/useAppSelector/useAppSelector';
 import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
 import cls from './Navbar.module.scss';
 
-interface NavbarProps {
-  className?: string;
-}
-
-export const Navbar = memo(({ className }: NavbarProps) => {
+export const Navbar = memo(() => {
   const { t } = useTranslation();
   const [isAuthModal, setIsAuthModal] = useState(false);
   const authData = useAppSelector(getUserAuthData);
