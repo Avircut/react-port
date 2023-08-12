@@ -26,7 +26,7 @@ export const Input = memo((props: InputProps) => {
     autofocus,
     ...otherProps
   } = props;
-  const inputRef = useRef<HTMLInputElement>();
+  const inputRef = useRef<HTMLInputElement>(null);
   const [isFocused, setIsFocused] = useState(false);
   const [caretPosition, setCaretPosition] = useState(0);
   // eslint-disable-next-line no-undef
