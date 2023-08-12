@@ -2,5 +2,15 @@
   "Title": "Profile",
   "Edit": "Edit",
   "Your firstname": "Your firstname",
-  "Your lastname": "Your lastname"
+  "Your lastname": "Your lastname",
+  "Profile Error": "Profile loading failed",
+  "Please Reload Page":"Try to reload page",
+  "Cancel": "Cancel",
+  "Save": "Save",
+  "Your city": "Your city",
+  "Your country": "Your country",
+  "Your age": "Your age",
+  "Your currency": "Your currency",
+  "Your username": "Your username",
+  "Your avatar": "Your avatar"
 }

@@ -46,6 +46,12 @@ export const Outline: Story = {
     children: 'Тест',
   },
 };
+export const OutlineRedd: Story = {
+  args: {
+    theme: ButtonTheme.OUTLINE_RED,
+    children: 'Тест',
+  },
+};
 export const OutlineSizeL: Story = {
   args: {
     theme: ButtonTheme.OUTLINE,

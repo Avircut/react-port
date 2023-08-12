@@ -2,5 +2,15 @@
   "Title": "Профиль",
   "Edit": "Редактировать",
   "Your firstname": "Ваше имя",
-  "Your lastname": "Ваша фамилия"
+  "Your lastname": "Ваша фамилия",
+  "Profile Error": "Произошла ошибка при загрузке профиля",
+  "Please Reload Page":"Попробуйте обновить страницу",
+  "Cancel": "Отменить",
+  "Save": "Сохранить",
+  "Your city": "Ваш город",
+  "Your country": "Ваша страна",
+  "Your age": "Ваш возраст",
+  "Your currency": "Ваша валюта",
+  "Your username": "Ваш логин",
+  "Your avatar": "Ваш аватар"
 }
