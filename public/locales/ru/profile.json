@@ -12,5 +12,10 @@
   "Your age": "Ваш возраст",
   "Your currency": "Ваша валюта",
   "Your username": "Ваш логин",
-  "Your avatar": "Ваш аватар"
+  "Your avatar": "Ваш аватар",
+  "SERVER_ERROR": "Ошибка сервера",
+  "INCORRECT_AGE": "Некорректный возраст",
+  "INCORRECT_USER_DATA": "Некорректные данные пользоавтеля",
+  "INCORRECT_COUNTRY": "Некорректная страна",
+  "NO_DATA": "Нет данных"
 }
