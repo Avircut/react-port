@@ -15,6 +15,7 @@ const App = () => {
   useEffect(() => {
     dispatch(userActions.initAuthData());
   }, [dispatch]);
+  document.body.className = theme;
   return (
     <Suspense fallback="">
       <div className={classNames('app')}>
