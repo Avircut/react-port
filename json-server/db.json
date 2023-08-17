@@ -21,15 +21,19 @@
       "author": "typicode"
     }
   ],
-  "articles":[
+  "articles": [
     {
       "id": "1",
       "title": "Javascript news",
       "subtitle": "Что нового в JS за 2022 год",
-      "img":  "https://www.freepnglogos.com/uploads/javascript-png/png-javascript-badge-picture-8.png",
+      "img": "https://www.freepnglogos.com/uploads/javascript-png/png-javascript-badge-picture-8.png",
       "views": 1022,
       "createdAt": "26.02.2022",
-      "type": ["IT", "SCIENCE", "PROGRAMMING"],
+      "type": [
+        "IT",
+        "SCIENCE",
+        "PROGRAMMING"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -124,18 +128,50 @@
       "text": "some comment 3",
       "articleId": "1",
       "userId": "1"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "test",
+      "id": "Ssf_T9V"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "test",
+      "id": "O12kXUH"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "test 1",
+      "id": "kS-ur-d"
     }
   ],
-  "profile": {
-    "first": "Вячеслав",
-    "lastname": "Ломов",
-    "age": 24,
-    "currency": "RUB",
-    "country": "Russia",
-    "city": "Krasnoyarsk",
-    "username": "admin",
-    "avatar": "https://sun27-1.userapi.com/s/v1/ig2/wi5o_w0R9_NC5nNp_7LxI8cZlUtm64kQ4PL5cpXrdw-7YFjF2BKnjiNV16rJiGBnvEId9NiNgieePJPOVzXMARIT.jpg?size=144x144&quality=95&crop=330,278,144,144&ava=1"
-  },
+  "profile": [
+    {
+      "id": "1",
+      "first": "Вячеслав",
+      "lastname": "Ломов",
+      "age": 24,
+      "currency": "RUB",
+      "country": "Armenia",
+      "city": "Krasnoyarsk",
+      "username": "admin",
+      "avatar": "https://sun27-1.userapi.com/s/v1/ig2/wi5o_w0R9_NC5nNp_7LxI8cZlUtm64kQ4PL5cpXrdw-7YFjF2BKnjiNV16rJiGBnvEId9NiNgieePJPOVzXMARIT.jpg?size=144x144&quality=95&crop=330,278,144,144&ava=1"
+    },
+    {
+      "id": "2",
+      "first": "Вячеслав",
+      "lastname": "Ломов1",
+      "age": 24,
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "Krasnoyarsk",
+      "username": "user",
+      "avatar": "https://www.freepnglogos.com/uploads/javascript-png/png-javascript-badge-picture-8.png"
+    }
+  ],
   "users": [
     {
       "id": "1",

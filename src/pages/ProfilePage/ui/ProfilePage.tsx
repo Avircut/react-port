@@ -22,6 +22,8 @@ import { Currency } from 'entities/Currency';
 import { Country } from 'entities/Country/model/types/country';
 import { Text, TextTheme } from 'shared/ui/Text/Text';
 import { useTranslation } from 'react-i18next';
+import { useInitialEffect } from 'shared/lib/hooks/useInitialEffect/useInitialEffect';
+import { useParams } from 'react-router-dom';
 import { ProfilePageHeader } from './ProfilePageHeader/ProfilePageHeader';
 
 const reducers: ReducersList = {
@@ -38,6 +40,7 @@ const ProfilePage = memo(({ className }: ProfilePageProps) => {
   const formData = useAppSelector(getProfileForm);
   const readonly = useAppSelector(getProfileReadOnly);
   const validateErrors = useAppSelector(getProfileValidateErrors);
+  const { id } = useParams<{id:string}>();
 
   const validateErrorTranslates = {
     [ValidateProfileError.SERVER_ERROR]: t(ValidateProfileError.SERVER_ERROR),
@@ -46,11 +49,11 @@ const ProfilePage = memo(({ className }: ProfilePageProps) => {
     [ValidateProfileError.INCORRECT_COUNTRY]: t(ValidateProfileError.INCORRECT_COUNTRY),
     [ValidateProfileError.NO_DATA]: t(ValidateProfileError.NO_DATA),
   };
-  useEffect(() => {
-    if (__PROJECT__ !== 'storybook') {
-      dispatch(fetchProfileData());
+  useInitialEffect(() => {
+    if (id) {
+      dispatch(fetchProfileData(id));
     }
-  }, [dispatch]);
+  });
 
   const onChangeFirstname = useCallback((value?:string) => {
     dispatch(profileActions.updateProfile({ first: value || '' }));
