@@ -1,0 +1,11 @@
+.ArticleList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.BIG {
+  .card {
+    width: 100%;
+  }
+}

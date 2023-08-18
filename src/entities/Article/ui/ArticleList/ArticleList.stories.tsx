@@ -1,19 +1,9 @@
-/* eslint-disable max-len */
-import { classNames } from 'shared/lib/classNames/classNames';
-import { useTranslation } from 'react-i18next';
-import { memo } from 'react';
-import { ArticleList } from 'entities/Article';
+import type { Meta, StoryObj } from '@storybook/react';
 import {
-  Article,
-  ArticleBlockType,
-  ArticleType,
-  ArticleView,
+  Article, ArticleBlockType, ArticleType, ArticleView,
 } from 'entities/Article/model/types/article';
-import cls from './ArticlesPage.module.scss';
+import { ArticleList } from './ArticleList';
 
-interface ArticlesPageProps {
-  className?: string;
-}
 const article = {
   id: '1',
   title: 'Javascript news',
@@ -21,13 +11,11 @@ const article = {
   img: 'https://www.freepnglogos.com/uploads/javascript-png/png-javascript-badge-picture-8.png',
   views: 1022,
   createdAt: '26.02.2022',
+  type: [ArticleType.IT, ArticleType.SCIENCE, ArticleType.PROGRAMMING],
   user: {
     id: '1',
     username: 'admin',
-    avatar:
-      'https://sun27-1.userapi.com/s/v1/ig2/wi5o_w0R9_NC5nNp_7LxI8cZlUtm64kQ4PL5cpXrdw-7YFjF2BKnjiNV16rJiGBnvEId9NiNgieePJPOVzXMARIT.jpg?size=144x144&quality=95&crop=330,278,144,144&ava=1',
   },
-  type: [ArticleType.IT, ArticleType.SCIENCE, ArticleType.PROGRAMMING],
   blocks: [
     {
       id: '1',
@@ -103,21 +91,46 @@ const article = {
     },
   ],
 } as Article;
-const ArticlesPage = (props: ArticlesPageProps) => {
-  const { className } = props;
-  const { t } = useTranslation('article');
-  return (
-    <div className={classNames(cls.ArticlesPage, {}, [className])}>
-      <ArticleList
-        isLoading
-        view={ArticleView.BIG}
-        articles={new Array(16).fill(0).map((item, index) => ({
-          ...article,
-          id: String(index),
-        }))}
-      />
-    </div>
-  );
-};
+const meta = {
+  title: 'entities/Article/ArticleList',
+  component: ArticleList,
+  tags: ['autodocs'],
+} satisfies Meta<typeof ArticleList>;
 
-export default memo(ArticlesPage);
+export default meta;
+type Story = StoryObj<typeof meta>;
+
+export const Small: Story = {
+  args: {
+    articles: [article, article, article, article],
+    view: ArticleView.SMALL,
+  },
+  decorators: [
+  ],
+};
+export const SmallLoading: Story = {
+  args: {
+    isLoading: true,
+    articles: [article, article, article, article],
+    view: ArticleView.SMALL,
+  },
+  decorators: [
+  ],
+};
+export const BigLoading: Story = {
+  args: {
+    isLoading: true,
+    articles: [article, article, article, article],
+    view: ArticleView.BIG,
+  },
+  decorators: [
+  ],
+};
+export const Big: Story = {
+  args: {
+    articles: [article, article, article, article],
+    view: ArticleView.BIG,
+  },
+  decorators: [
+  ],
+};

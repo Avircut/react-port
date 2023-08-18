@@ -1,0 +1,107 @@
+.BIG {
+  width: 100%;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .header {
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+  }
+
+  .user {
+    display: flex;
+    gap: 8px;
+  }
+
+  .image {
+    width: calc(100% + 30px);
+    max-height: 200px;
+    object-fit: contain;
+    object-position: center;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .textBlock {
+    max-height: 200px;
+    overflow-y: hidden;
+  }
+
+  .views {
+    margin-left: auto;
+  }
+}
+
+.SMALL {
+  width: 230px;
+  transition: 0.2s all ease-in;
+  cursor: pointer;
+
+  .date {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+  }
+
+  &:hover {
+    opacity: 0.8;
+    transform: scale(1.01);
+
+    .date {
+      display: block;
+    }
+  }
+
+  .imageWrapper {
+    width: 200px;
+    height: 200px;
+    position: relative;
+  }
+
+  .image {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .title {
+    margin-top: 8px;
+  }
+
+  .infoWrapper {
+    display: flex;
+  }
+
+  .types p {
+    width: 130px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .title p {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .views {
+    margin-left: auto;
+    margin-right: 5px;
+  }
+}

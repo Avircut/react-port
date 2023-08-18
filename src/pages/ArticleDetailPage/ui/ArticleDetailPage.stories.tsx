@@ -10,6 +10,10 @@ const article = {
   img: 'https://www.freepnglogos.com/uploads/javascript-png/png-javascript-badge-picture-8.png',
   views: 1022,
   createdAt: '26.02.2022',
+  user: {
+    id: '1',
+    username: 'admin',
+  },
   type: [ArticleType.IT, ArticleType.SCIENCE, ArticleType.PROGRAMMING],
   blocks: [
     {
