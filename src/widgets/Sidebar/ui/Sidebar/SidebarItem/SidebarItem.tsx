@@ -1,7 +1,7 @@
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
 import { AppLink, AppLinkTheme } from 'shared/ui/AppLink/AppLink';
-import { SidebarItemType } from 'widgets/Sidebar/model/Items';
+import { SidebarItemType } from "widgets/Sidebar/model/types/sidebar";
 import { memo } from 'react';
 import { useAppSelector } from 'shared/lib/hooks/useAppSelector/useAppSelector';
 import { getUserAuthData } from 'entities/User';
