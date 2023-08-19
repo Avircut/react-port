@@ -3,4 +3,4 @@ export { addNewCommentActions } from './model/slice/addNewCommentSlice';
 
 export { AddNewCommentAsync as AddNewComment } from './ui/AddNewComment/AddNewComment.async';
 
-export { addNewCommentSchema } from './model/types/addNewComment';
+export { AddNewCommentSchema } from './model/types/addNewComment';
