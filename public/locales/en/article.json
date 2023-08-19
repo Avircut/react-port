@@ -1,7 +1,8 @@
 {
   "Article not found": "Article not found",
-  "Loading Error": "Error acuared while loading this article",
+  "Loading Error": "Error occurred while loading this article",
   "Comments": "Comments",
   "Read more": "Read more",
-  "Back": "Back to list"
+  "Back": "Back to list",
+  "Article List Error": "Error occurred on loading articles"
 }

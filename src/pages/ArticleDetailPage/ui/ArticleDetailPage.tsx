@@ -12,6 +12,7 @@ import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { AddNewComment } from 'features/addNewComment';
 import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { RoutePath } from 'shared/config/routeConfig/routeConfig';
+import { Page } from 'shared/ui/Page/Page';
 import cls from './ArticleDetailPage.module.scss';
 import { articleDetailsCommentsReducer, getArticleComments } from '../model/slices/articleDetailsCommentsSlice';
 import { getArticleCommentsIsLoading } from '../model/selectors/comments';
@@ -52,7 +53,7 @@ const ArticleDetailPage = (props : ArticleDetailPageProps) => {
   }
   return (
     <DynamicModuleLoader removeAfterUnmount reducers={reducers}>
-      <div className={classNames(cls.ArticleDetailPage, {}, [className])}>
+      <Page className={classNames(cls.ArticleDetailPage, {}, [className])}>
         <Button onClick={onBackToList} theme={ButtonTheme.OUTLINE}>{t('Back')}</Button>
         <ArticleDetails className={cls.article} id={id} />
         <Text title={t('Comments')} />
@@ -61,7 +62,7 @@ const ArticleDetailPage = (props : ArticleDetailPageProps) => {
           isLoading={commentsIsLoading}
           comments={comments}
         />
-      </div>
+      </Page>
     </DynamicModuleLoader>
 
   );
