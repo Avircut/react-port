@@ -24,5 +24,13 @@
   "Articles": "Articles",
   "No Comments": "No Comments",
   "Enter your comment": "Enter your comment",
-  "Send": "Send"
+  "Send": "Send",
+  "SortBy": "Sort by:",
+  "Search": "Search",
+  "SortDirection": "Direction",
+  "Ascending": "Ascending",
+  "Descending": "Descending",
+  "sortDate": "creating date",
+  "sortTitle": "title",
+  "sortViews": "views"
 }

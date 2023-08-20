@@ -4,5 +4,10 @@
   "Comments": "Comments",
   "Read more": "Read more",
   "Back": "Back to list",
-  "Article List Error": "Error occurred on loading articles"
+  "Article List Error": "Error occurred on loading articles",
+  "ALL": "All",
+  "IT": "IT",
+  "PROGRAMMING": "Programming",
+  "SCIENCE": "Science",
+  "Articles not found": "Filtered articles not found"
 }

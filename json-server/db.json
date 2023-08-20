@@ -368,8 +368,6 @@
       "createdAt": "26.02.2022",
       "userId": "1",
       "type": [
-        "IT",
-        "SCIENCE",
         "PROGRAMMING"
       ],
       "blocks": [
@@ -387,16 +385,14 @@
     },
     {
       "id": "15",
-      "title": "Javascript news",
+      "title": "Что такое в 2021",
       "subtitle": "Что нового в JS за 2022 год",
       "img": "https://www.freepnglogos.com/uploads/javascript-png/png-javascript-badge-picture-8.png",
-      "views": 1022,
-      "createdAt": "26.02.2022",
+      "views": 233,
+      "createdAt": "06.03.2021",
       "userId": "1",
       "type": [
-        "IT",
-        "SCIENCE",
-        "PROGRAMMING"
+        "IT"
       ],
       "blocks": [
         {
@@ -413,16 +409,14 @@
     },
     {
       "id": "16",
-      "title": "Javascript news",
+      "title": "2019 Ковид скоро",
       "subtitle": "Что нового в JS за 2022 год",
       "img": "https://www.freepnglogos.com/uploads/javascript-png/png-javascript-badge-picture-8.png",
-      "views": 1022,
-      "createdAt": "26.02.2022",
+      "views": 765,
+      "createdAt": "07.07.2019",
       "userId": "1",
       "type": [
-        "IT",
-        "SCIENCE",
-        "PROGRAMMING"
+        "SCIENCE"
       ],
       "blocks": [
         {
@@ -439,11 +433,11 @@
     },
     {
       "id": "17",
-      "title": "ES 6 ",
+      "title": "ES 6 вышел",
       "subtitle": "Что нового в JS за 2022 год",
       "img": "https://www.freepnglogos.com/uploads/javascript-png/png-javascript-badge-picture-8.png",
-      "views": 1022,
-      "createdAt": "26.02.2022",
+      "views": 666,
+      "createdAt": "16.02.2016",
       "userId": "1",
       "type": [
         "IT",
@@ -465,11 +459,11 @@
     },
     {
       "id": "18",
-      "title": "Kotlin умер?",
+      "title": "Ковид закончился?",
       "subtitle": "Что нового в JS за 2022 год",
       "img": "https://www.freepnglogos.com/uploads/javascript-png/png-javascript-badge-picture-8.png",
-      "views": 1022,
-      "createdAt": "26.02.2022",
+      "views": 1002,
+      "createdAt": "21.01.2020",
       "userId": "1",
       "type": [
         "IT",
@@ -494,8 +488,8 @@
       "title": "Baldur's Gate 3",
       "subtitle": "Что нового в JS за 2022 год",
       "img": "https://www.freepnglogos.com/uploads/javascript-png/png-javascript-badge-picture-8.png",
-      "views": 1022,
-      "createdAt": "26.02.2022",
+      "views": 342,
+      "createdAt": "13.08.2023",
       "userId": "1",
       "type": [
         "IT",
@@ -517,11 +511,11 @@
     },
     {
       "id": "20",
-      "title": "Только самое новое",
+      "title": "Path of Exile 2 - Чего нам ждать?",
       "subtitle": "Что нового в JS за 2022 год",
       "img": "https://www.freepnglogos.com/uploads/javascript-png/png-javascript-badge-picture-8.png",
-      "views": 1022,
-      "createdAt": "26.02.2022",
+      "views": 777,
+      "createdAt": "14.07.2023",
       "userId": "1",
       "type": [
         "IT",
@@ -543,11 +537,11 @@
     },
     {
       "id": "21",
-      "title": "Что произошло",
+      "title": "Сняли ограничения",
       "subtitle": "Что нового в JS за 2022 год",
       "img": "https://www.freepnglogos.com/uploads/javascript-png/png-javascript-badge-picture-8.png",
-      "views": 1022,
-      "createdAt": "26.02.2022",
+      "views": 323,
+      "createdAt": "20.02.2021",
       "userId": "1",
       "type": [
         "IT",

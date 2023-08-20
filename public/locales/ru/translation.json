@@ -24,5 +24,13 @@
   "Articles": "Статьи",
   "No Comments": "Комментарии отсутствуют",
   "Enter your comment": "Введите ваш комментарий",
-  "Send": "Отправить"
+  "Send": "Отправить",
+  "SortBy": "Сортировать по",
+  "Search": "Поиск",
+  "SortDirection": "Направление",
+  "Ascending": "По возрастанию",
+  "Descending": "По убыванию",
+  "sortDate": "дате создания",
+  "sortTitle": "заголовку",
+  "sortViews": "просмотрам"
 }

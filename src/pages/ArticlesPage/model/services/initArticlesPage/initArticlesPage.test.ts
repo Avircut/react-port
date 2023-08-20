@@ -18,7 +18,7 @@ describe('initArticlesPage.test', () => {
       },
     });
     thunk.api.get.mockReturnValue(Promise.resolve());
-    const result = await thunk.callThunk();
+    const result = await thunk.callThunk(new URLSearchParams());
 
     expect(thunk.dispatch).toBeCalledTimes(4);
     expect(result.meta.requestStatus).toBe('fulfilled');
@@ -36,7 +36,7 @@ describe('initArticlesPage.test', () => {
       },
     });
     thunk.api.get.mockReturnValue(Promise.resolve());
-    await thunk.callThunk();
+    await thunk.callThunk(new URLSearchParams());
 
     expect(thunk.dispatch).toBeCalledTimes(2);
     expect(fetchArticlesList).not.toHaveBeenCalled();
