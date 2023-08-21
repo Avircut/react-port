@@ -14,3 +14,14 @@
 .links {
   margin-left: auto;
 }
+
+.logoWrapper {
+  width: calc(var(--sidebar-width) - 20px);
+  display: flex;
+}
+
+.logo {
+  max-width: 150px;
+  object-fit: contain;
+  margin-right: 40px;
+}

@@ -35,6 +35,12 @@
   background: none;
 }
 
+.outline_green {
+  border: 1px solid var(--green-light);
+  color: var(--green-light);
+  background: none;
+}
+
 .background {
   background: var(--bg-color);
   color: var(--primary-color);

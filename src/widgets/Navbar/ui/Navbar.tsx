@@ -6,6 +6,11 @@ import { LoginModal } from 'features/authByUsername';
 import { getUserAuthData, userActions } from 'entities/User';
 import { useAppSelector } from 'shared/lib/hooks/useAppSelector/useAppSelector';
 import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
+import { Text } from 'shared/ui/Text/Text';
+import { AppLink, AppLinkTheme } from 'shared/ui/AppLink/AppLink';
+import { RoutePath } from 'shared/config/routeConfig/routeConfig';
+import { Icon } from 'shared/ui/Icon/Icon';
+import LogoIcon from 'shared/assets/icons/logo.svg';
 import cls from './Navbar.module.scss';
 
 export const Navbar = memo(() => {
@@ -25,6 +30,13 @@ export const Navbar = memo(() => {
   if (authData) {
     return (
       <header className={classNames(cls.navbar)}>
+        <div className={cls.logoWrapper}>
+          <Icon Svg={LogoIcon} className={cls.logo} />
+
+        </div>
+        <AppLink to={RoutePath.articles_create}>
+          <Button theme={ButtonTheme.OUTLINE_GREEN}>{t('Create Article')}</Button>
+        </AppLink>
         <Button
           theme={ButtonTheme.CLEAR_INVERTED}
           className={cls.links}
@@ -45,7 +57,9 @@ export const Navbar = memo(() => {
         >
           {t('Log in')}
         </Button>
-        {isAuthModal && <LoginModal isOpen={isAuthModal} onClose={onCloseModal} />}
+        {isAuthModal && (
+          <LoginModal isOpen={isAuthModal} onClose={onCloseModal} />
+        )}
       </div>
     </header>
   );

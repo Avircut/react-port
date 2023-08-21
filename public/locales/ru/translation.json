@@ -32,5 +32,9 @@
   "Descending": "По убыванию",
   "sortDate": "дате создания",
   "sortTitle": "заголовку",
-  "sortViews": "просмотрам"
+  "sortViews": "просмотрам",
+  "Edit Page Header": "Редактирование статьи №",
+  "Create Page Header": "Создание новой статьи",
+  "App": "App",
+  "Create Article": "Создать статью"
 }

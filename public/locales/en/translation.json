@@ -32,5 +32,9 @@
   "Descending": "Descending",
   "sortDate": "creating date",
   "sortTitle": "title",
-  "sortViews": "views"
+  "sortViews": "views",
+  "Edit Page Header": "Edit article #",
+  "Create Page Header": "Create new article",
+  "App": "App",
+  "Create Article": "Create Article"
 }
