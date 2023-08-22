@@ -9,3 +9,15 @@
     width: 100%;
   }
 }
+
+.SMALL {
+  .card {
+    display: inline-flex;
+    height: 300px;
+  }
+
+  .row {
+    display: flex;
+    gap: 30px;
+  }
+}

@@ -49,6 +49,7 @@
     "@types/react": "^17.0.39",
     "@types/react-dom": "^17.0.11",
     "@types/react-router-dom": "^5.3.3",
+    "@types/react-virtualized": "^9.21.22",
     "@types/webpack": "^5.28.0",
     "@types/webpack-bundle-analyzer": "^4.6.0",
     "@types/webpack-dev-server": "^4.7.2",
@@ -77,6 +78,7 @@
     "mini-css-extract-plugin": "^2.7.6",
     "react-redux": "^8.1.2",
     "react-refresh": "^0.14.0",
+    "react-virtualized": "^9.22.5",
     "reg-cli": "^0.17.7",
     "regenerator-runtime": "^0.13.11",
     "sass": "^1.49.9",
@@ -102,6 +104,11 @@
     "react-dom": "^17.0.2",
     "react-i18next": "^13.0.3",
     "react-router-dom": "^6.2.1"
+  },
+  "peerDependencies": {
+    "@storybook/react": "^7.2.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "loki": {
     "configurations": {
