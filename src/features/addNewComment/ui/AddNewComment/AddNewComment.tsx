@@ -6,6 +6,7 @@ import { Button } from 'shared/ui/Button/Button';
 import { useAppSelector } from 'shared/lib/hooks/useAppSelector/useAppSelector';
 import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { DynamicModuleLoader, ReducersList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
+import { HStack } from 'shared/ui/Stack';
 import { addNewCommentActions, addNewCommentReducer } from '../../model/slice/addNewCommentSlice';
 import { getNewCommentError, getNewCommentText } from '../../model/selectors/addNewCommentSelectors';
 import cls from './AddNewComment.module.scss';
@@ -33,10 +34,10 @@ const AddNewComment = memo((props : AddNewCommentProps) => {
   }, [onCommentTextChange, onSendComment, text]);
   return (
     <DynamicModuleLoader reducers={reducers}>
-      <div className={classNames(cls.AddNewComment, {}, [className])}>
+      <HStack justify="between" className={classNames(cls.AddNewComment, {}, [className])}>
         <Input className={cls.input} onChange={onCommentTextChange} placeholder={t('Enter your comment')} />
         <Button onClick={onSendHandler}>{t('Send')}</Button>
-      </div>
+      </HStack>
     </DynamicModuleLoader>
 
   );
