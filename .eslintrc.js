@@ -18,7 +18,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['react', '@typescript-eslint', 'i18next', 'react-hooks'],
+  plugins: ['react', '@typescript-eslint', 'i18next', 'react-hooks', 'avircut-plugin'],
   rules: {
     'react/jsx-filename-extension': [
       2,
@@ -59,6 +59,7 @@ module.exports = {
     'no-undef': 'off',
     'react/no-array-index-key': 'off',
     'arrow-body-style': 'off',
+    'avircut-plugin/path-checker': 'error',
   },
   globals: {
     __IS_DEV__: true,

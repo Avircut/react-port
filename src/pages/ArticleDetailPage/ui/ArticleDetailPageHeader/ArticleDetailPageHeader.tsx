@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 import { useAppSelector } from 'shared/lib/hooks/useAppSelector/useAppSelector';
 import { getUserAuthData } from 'entities/User';
 import { getArticleDetailsData } from 'entities/Article';
-import { getCanEditArticle } from 'pages/ArticleDetailPage/model/selectors/article';
+import { getCanEditArticle } from '../../model/selectors/article';
 import cls from './ArticleDetailPageHeader.module.scss';
 
 interface ArticleDetailPageHeaderProps {
