@@ -4,6 +4,7 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import cls from './ListBox.module.scss';
 import { Button } from '../Button/Button';
 import { HStack } from '../Stack';
+import { DropdownDirection } from '../../types/ui';
 
 export interface ListboxItem{
   value: string;
@@ -11,7 +12,6 @@ export interface ListboxItem{
   disabled?: boolean;
 }
 
-type DropdownDirection = 'top' | 'bottom';
 interface ListboxProps{
   items?: ListboxItem[];
   className?: string;
@@ -25,7 +25,7 @@ interface ListboxProps{
 
 export function Listbox(props: ListboxProps) {
   const {
-    className, items, defaultValue, value, onChange, readonly, direction = 'bottom', label,
+    className, items, defaultValue, value, onChange, readonly, direction = 'bottomRight', label,
   } = props;
   const optionClasses = [cls[direction]];
   return (

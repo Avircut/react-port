@@ -10,6 +10,8 @@ import { AppLink } from 'shared/ui/AppLink/AppLink';
 import { RoutePath } from 'shared/config/routeConfig/routeConfig';
 import { Icon } from 'shared/ui/Icon/Icon';
 import LogoIcon from 'shared/assets/icons/logo.svg';
+import { Dropdown } from 'shared/ui/Dropdown/Dropdown';
+import { Avatar } from 'shared/ui/Avatar/Avatar';
 import cls from './Navbar.module.scss';
 
 export const Navbar = memo(() => {
@@ -31,18 +33,28 @@ export const Navbar = memo(() => {
       <header className={classNames(cls.navbar)}>
         <div className={cls.logoWrapper}>
           <Icon Svg={LogoIcon} className={cls.logo} />
-
         </div>
         <AppLink to={RoutePath.articles_create}>
-          <Button theme={ButtonTheme.OUTLINE_GREEN}>{t('Create Article')}</Button>
+          <Button theme={ButtonTheme.OUTLINE_GREEN}>
+            {t('Create Article')}
+          </Button>
         </AppLink>
-        <Button
-          theme={ButtonTheme.CLEAR_INVERTED}
-          className={cls.links}
-          onClick={onLogout}
-        >
-          {t('Log out')}
-        </Button>
+        <Dropdown
+          direction="bottomLeft"
+          className={cls.dropdown}
+          trigger={<Avatar size={30} src={authData.avatar} />}
+          items={[
+            {
+              content: t('Profile'),
+              href: RoutePath.profile + authData.id,
+            },
+            {
+              content: t('Log out'),
+              onClick: onLogout,
+            },
+
+          ]}
+        />
       </header>
     );
   }
