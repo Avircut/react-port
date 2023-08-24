@@ -51,31 +51,33 @@ export const ProfileCard = (props: ProfileCardProps) => {
   };
   if (isLoading) {
     return (
-      <div
+      <HStack
+        justify="center"
+        max
         className={classNames(cls.ProfileCard, { [cls.loading]: true }, [
           className,
         ])}
       >
         <Loader />
-      </div>
+      </HStack>
     );
   }
   if (error) {
     return (
-      <div className={classNames(cls.ProfileCard, {}, [className, cls.error])}>
+      <HStack justify="center" max className={classNames(cls.ProfileCard, {}, [className, cls.error])}>
         <Text
           theme={TextTheme.ERROR}
           title={t('Profile Error')}
           text={t('Please Reload Page')}
           align={TextAlign.CENTER}
         />
-      </div>
+      </HStack>
     );
   }
   return (
-    <VStack align="stretch" gap="8" className={classNames(cls.ProfileCard, mods, [className])}>
+    <VStack max gap="8" className={classNames(cls.ProfileCard, mods, [className])}>
       {data?.avatar && (
-      <HStack justify="center">
+      <HStack justify="center" max>
         <Avatar src={data.avatar} />
       </HStack>
       )}
