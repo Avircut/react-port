@@ -10,6 +10,7 @@ import { Avatar } from 'shared/ui/Avatar/Avatar';
 import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { RoutePath } from 'shared/config/routeConfig/routeConfig';
 import { AppLink } from 'shared/ui/AppLink/AppLink';
+import { HStack, VStack } from 'shared/ui/Stack';
 import {
   Article,
   ArticleBlockType,
@@ -48,34 +49,36 @@ export const ArticleListItem = memo((props: ArticleListItemProps) => {
         className={classNames(cls.ArticleListItem, {}, [className, cls[view]])}
       >
         <Card className={cls.card}>
-          <div className={cls.header}>
-            <div className={cls.user}>
-              <Avatar size={30} src={article.user.avatar} />
-              <Text text={article.user.username} className={cls.username} />
-            </div>
-            <Text text={article.createdAt} className={cls.date} />
-          </div>
-          <Text title={article.title} />
-          {types}
-          <img src={article.img} alt={article.title} className={cls.image} />
-          {textBlock && (
+          <VStack gap="8" align="stretch">
+            <HStack>
+              <HStack className={cls.user}>
+                <Avatar size={30} src={article.user.avatar} />
+                <Text text={article.user.username} className={cls.username} />
+              </HStack>
+              <Text text={article.createdAt} className={cls.date} />
+            </HStack>
+            <Text title={article.title} />
+            {types}
+            <img src={article.img} alt={article.title} className={cls.image} />
+            {textBlock && (
             <ArticleTextBlockComponent
               block={textBlock}
               className={cls.textBlock}
             />
-          )}
-          <div className={cls.footer}>
-            <AppLink to={RoutePath.articles_details + article.id} target={target}>
-              <Button
-                theme={ButtonTheme.OUTLINE}
-                className={cls.moreBtn}
-              >
-                {t('Read more')}
-              </Button>
-            </AppLink>
+            )}
+            <HStack justify="between">
+              <AppLink to={RoutePath.articles_details + article.id} target={target}>
+                <Button
+                  theme={ButtonTheme.OUTLINE}
+                  className={cls.moreBtn}
+                >
+                  {t('Read more')}
+                </Button>
+              </AppLink>
+              {views}
+            </HStack>
+          </VStack>
 
-            {views}
-          </div>
         </Card>
       </div>
     );
@@ -87,15 +90,18 @@ export const ArticleListItem = memo((props: ArticleListItemProps) => {
       to={RoutePath.articles_details + article.id}
     >
       <Card className={cls.card}>
-        <div className={cls.imageWrapper}>
-          <img src={article.img} alt={article.title} className={cls.image} />
-          <Text text={article.createdAt} className={cls.date} />
-        </div>
-        <div className={cls.infoWrapper}>
-          {types}
-          {views}
-        </div>
-        <Text text={article.title} className={cls.title} />
+        <VStack align="stretch">
+          <div className={cls.imageWrapper}>
+            <img src={article.img} alt={article.title} className={cls.image} />
+            <Text text={article.createdAt} className={cls.date} />
+          </div>
+          <HStack justify="between">
+            {types}
+            {views}
+          </HStack>
+          <Text text={article.title} className={cls.title} />
+        </VStack>
+
       </Card>
     </AppLink>
   );

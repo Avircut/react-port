@@ -48,7 +48,7 @@ export const ArticleList = memo((props: ArticleListProps) => {
       items.push(<ArticleListItem
         className={cls.card}
         view={view}
-        article={articles[index]}
+        article={articles[i]}
         target={target}
         key={articles[i].id}
       />);
