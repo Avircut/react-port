@@ -39,6 +39,7 @@ export interface FlexProps extends DivProps {
   direction?: FlexDirection;
   gap?: FlexGap;
   max?: boolean;
+  grow?: boolean;
 }
 
 export const Flex = (props: FlexProps) => {
@@ -50,9 +51,11 @@ export const Flex = (props: FlexProps) => {
     direction = 'row',
     gap = '4',
     max = false,
+    grow = false,
   } = props;
   const mods:Mods = {
     [cls.max]: max,
+    [cls.grow]: grow,
   };
   return (
     <div

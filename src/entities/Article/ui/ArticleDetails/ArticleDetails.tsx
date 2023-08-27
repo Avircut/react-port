@@ -4,7 +4,9 @@ import {
   DynamicModuleLoader,
   ReducersList,
 } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
-import { memo, useCallback, useEffect } from 'react';
+import {
+  memo, useCallback, useMemo,
+} from 'react';
 import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { useAppSelector } from 'shared/lib/hooks/useAppSelector/useAppSelector';
 import { Text, TextAlign, TextSize } from 'shared/ui/Text/Text';
@@ -14,6 +16,16 @@ import EyeIcon from 'shared/assets/icons/eye-20-20.svg';
 import DateIcon from 'shared/assets/icons/calendar-20-20.svg';
 import { Icon } from 'shared/ui/Icon/Icon';
 import { HStack, VStack } from 'shared/ui/Stack';
+import {
+  LikeButton,
+  fetchLikes,
+  addLikeToArticle,
+  removeLikeFromArticle,
+  getLikesCount,
+  getLikeByArticleId,
+} from 'entities/Like/';
+import { likeReducer } from 'entities/Like/model/slice/likeSlice';
+import { useInitialEffect } from 'shared/lib/hooks/useInitialEffect/useInitialEffect';
 import { fetchArticleById } from '../../model/services/fetchArticleById/fetchArticleById';
 import {
   getArticleDetailsData,
@@ -33,6 +45,7 @@ interface ArticleDetailsProps {
 }
 const reducers: ReducersList = {
   articleDetails: articleDetailsReducer,
+  likes: likeReducer,
 };
 export const ArticleDetails = memo((props: ArticleDetailsProps) => {
   const { className, id } = props;
@@ -41,6 +54,22 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
   const isLoading = useAppSelector(getArticleDetailsIsLoading);
   const error = useAppSelector(getArticleDetailsError);
   const article = useAppSelector(getArticleDetailsData);
+  useInitialEffect(() => {
+    dispatch(fetchLikes());
+  });
+  const articleLike = useAppSelector(getLikeByArticleId);
+  const isLiked = useMemo(() => {
+    return Boolean(articleLike);
+  }, [articleLike]);
+  const likesCount = useAppSelector(getLikesCount);
+  const onAddLike = useCallback(() => {
+    dispatch(addLikeToArticle());
+  }, [dispatch]);
+  const onRemoveLike = useCallback(() => {
+    if (articleLike) {
+      dispatch(removeLikeFromArticle(articleLike.id));
+    }
+  }, [articleLike, dispatch]);
 
   const renderBlock = useCallback((block: ArticleBlock) => {
     switch (block.type) {
@@ -72,11 +101,9 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
         return null;
     }
   }, []);
-  useEffect(() => {
-    if (__PROJECT__ !== 'storybook') {
-      dispatch(fetchArticleById(id));
-    }
-  }, [dispatch, id]);
+  useInitialEffect(() => {
+    dispatch(fetchArticleById(id));
+  });
   let content = (
     <>
       <HStack align="center" className={cls.avatarWrapper}>
@@ -98,6 +125,12 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
           <Icon Svg={DateIcon} />
           <Text text={article?.createdAt} />
         </HStack>
+        <LikeButton
+          isLiked={isLiked}
+          onAdd={onAddLike}
+          onRemove={onRemoveLike}
+          count={likesCount}
+        />
       </VStack>
 
       {article?.blocks.map(renderBlock)}
@@ -127,7 +160,11 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
 
   return (
     <DynamicModuleLoader removeAfterUnmount reducers={reducers}>
-      <VStack gap="16" align="stretch" className={classNames(cls.ArticleDetails, {}, [className])}>
+      <VStack
+        gap="16"
+        align="stretch"
+        className={classNames(cls.ArticleDetails, {}, [className])}
+      >
         {content}
       </VStack>
     </DynamicModuleLoader>

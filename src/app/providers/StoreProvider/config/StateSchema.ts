@@ -10,16 +10,14 @@ import { CounterSchema } from 'entities/Counter';
 import { ProfileSchema } from 'entities/Profile';
 import { UserSchema } from 'entities/User';
 import { LoginSchema } from 'features/authByUsername';
-import { NavigateOptions, To } from 'react-router-dom';
 import { ArticleDetailsSchema } from 'entities/Article';
 import {
-  ArticleDetailsCommentsSchema,
-  ArticleDetailsPageRecommendationsSchema,
   ArticleDetailsPageSchema,
 } from 'pages/ArticleDetailPage';
 import { AddNewCommentSchema } from 'features/addNewComment';
 import { ArticlesPageSchema } from 'pages/ArticlesPage';
 import { UISchema } from 'features/UI';
+import { LikeSchema } from 'entities/Like';
 import { AppDispatch } from './store';
 
 export interface StateSchema {
@@ -34,6 +32,7 @@ export interface StateSchema {
   addNewComment?: AddNewCommentSchema;
   articlesPage?: ArticlesPageSchema;
   articleDetailsPage?: ArticleDetailsPageSchema;
+  likes?: LikeSchema;
 }
 
 export type StateSchemaKey = keyof StateSchema;

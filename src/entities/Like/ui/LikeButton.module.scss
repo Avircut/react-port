@@ -1,0 +1,11 @@
+.LikeButton:not(.active) {
+  &:hover {
+    .heartIcon path {
+      fill: var(--green-dark);
+    }
+  }
+}
+
+.heartIcon {
+  transition: 0.3s all ease-in-out;
+}

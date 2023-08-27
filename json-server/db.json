@@ -651,5 +651,22 @@
       "role": "user",
       "avatar": "https://sun27-1.userapi.com/s/v1/ig2/wi5o_w0R9_NC5nNp_7LxI8cZlUtm64kQ4PL5cpXrdw-7YFjF2BKnjiNV16rJiGBnvEId9NiNgieePJPOVzXMARIT.jpg?size=144x144&quality=95&crop=330,278,144,144&ava=1"
     }
+  ],
+  "likes": [
+    {
+      "id": "4",
+      "userId": "2",
+      "articleId": "3"
+    },
+    {
+      "articleId": "20",
+      "userId": "1",
+      "id": "MPvU0wY"
+    },
+    {
+      "articleId": "4",
+      "userId": "1",
+      "id": "WCe1oFH"
+    }
   ]
 }
