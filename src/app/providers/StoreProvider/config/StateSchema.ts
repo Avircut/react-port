@@ -7,7 +7,6 @@ import {
 } from '@reduxjs/toolkit';
 import { AxiosInstance } from 'axios';
 import { CounterSchema } from 'entities/Counter';
-import { ProfileSchema } from 'entities/Profile';
 import { UserSchema } from 'entities/User';
 import { LoginSchema } from 'features/authByUsername';
 import { ArticleDetailsSchema } from 'entities/Article';
@@ -18,12 +17,15 @@ import { AddNewCommentSchema } from 'features/addNewComment';
 import { ArticlesPageSchema } from 'pages/ArticlesPage';
 import { UISchema } from 'features/UI';
 import { LikeSchema } from 'entities/Like';
+import { rtkApi } from 'shared/api/rtkApi';
+import { ProfileSchema } from 'features/editableProfileCard';
 import { AppDispatch } from './store';
 
 export interface StateSchema {
   counter: CounterSchema;
   user: UserSchema;
   uiSchema: UISchema;
+  [rtkApi.reducerPath]: ReturnType<typeof rtkApi.reducer>
 
   // Async
   loginForm?: LoginSchema;

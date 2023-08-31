@@ -93,7 +93,7 @@ const article = {
   ],
 };
 const meta = {
-  title: 'entities/ArticleDetails',
+  title: 'entities/Article/ArticleDetails',
   component: ArticleDetails,
   tags: ['autodocs'],
 } satisfies Meta<typeof ArticleDetails>;

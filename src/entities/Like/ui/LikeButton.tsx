@@ -18,7 +18,7 @@ interface LikeButtonProps {
 
 export const LikeButton = memo((props: LikeButtonProps) => {
   const {
-    className, isLiked, onAdd, onRemove, count = 0,
+    className, isLiked = false, onAdd, onRemove, count = 0,
   } = props;
   const mods:Mods = {
     [cls.active]: isLiked,

@@ -4,7 +4,7 @@
   "Your firstname": "Ваше имя",
   "Your lastname": "Ваша фамилия",
   "Profile Error": "Произошла ошибка при загрузке профиля",
-  "Please Reload Page":"Попробуйте обновить страницу",
+  "Please Reload Page": "Попробуйте обновить страницу",
   "Cancel": "Отменить",
   "Save": "Сохранить",
   "Your city": "Ваш город",
@@ -17,5 +17,6 @@
   "INCORRECT_AGE": "Некорректный возраст",
   "INCORRECT_USER_DATA": "Некорректные данные пользоавтеля",
   "INCORRECT_COUNTRY": "Некорректная страна",
-  "NO_DATA": "Нет данных"
+  "NO_DATA": "Нет данных",
+  "Profile not found": "Профиль не найден"
 }

@@ -4,7 +4,7 @@ import { Theme } from 'app/providers/ThemeProvider';
 import ArticleEditPage from './ArticleEditPage';
 
 const meta = {
-  title: 'page/Article/ArticleEditPage',
+  title: 'pages/Article/ArticleEditPage',
   component: ArticleEditPage,
   tags: ['autodocs'],
 } satisfies Meta<typeof ArticleEditPage>;

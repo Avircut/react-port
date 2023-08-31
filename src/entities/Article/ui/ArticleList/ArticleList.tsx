@@ -26,7 +26,7 @@ const getSkeletons = (view: ArticleView) => new Array(view === ArticleView.SMALL
 export const ArticleList = memo((props: ArticleListProps) => {
   const {
     className,
-    articles,
+    articles = [],
     isLoading,
     view = ArticleView.SMALL,
     target,

@@ -4,7 +4,7 @@
   "Your firstname": "Your firstname",
   "Your lastname": "Your lastname",
   "Profile Error": "Profile loading failed",
-  "Please Reload Page":"Try to reload page",
+  "Please Reload Page": "Try to reload page",
   "Cancel": "Cancel",
   "Save": "Save",
   "Your city": "Your city",
@@ -17,5 +17,6 @@
   "INCORRECT_AGE": "Incorrect age",
   "INCORRECT_USER_DATA": "Incorrect user data",
   "INCORRECT_COUNTRY": "Incorrect country",
-  "NO_DATA": "No data"
+  "NO_DATA": "No data",
+  "Profile not found": "Profile not found"
 }
